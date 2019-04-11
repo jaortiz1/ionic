@@ -29,6 +29,7 @@ export class PhotoPage {
       destinationType: this.camera.DestinationType.FILE_URI,
       encodingType: this.camera.EncodingType.JPEG,
       mediaType: this.camera.MediaType.PICTURE,
+      //open library
       sourceType: this.camera.PictureSourceType.PHOTOLIBRARY  
     }
     
@@ -43,12 +44,12 @@ export class PhotoPage {
       // console.log(this.showButtonUpload)
       // this.showButtonUpload=false;
       // console.log(this.showButtonUpload)
-      var image = document.getElementById('photo');
       this.source = imageData;
-      //clean the camera
-      this.camera.cleanup();
+      console.log('ruta')
+      console.log(this.source)
      }, (err) => {
       // Handle error
+      console.log('da error galleria')
       console.log(err)
 
      });
@@ -71,12 +72,15 @@ export class PhotoPage {
       // this.base64='data:image/jpeg;base64,' + imageData;
       // console.log('aqui')
       // console.log(this.base64)
-      var image = document.getElementById('photo');
       this.source = imageData;
+      console.log('ruta')
+      console.log(this.source)
       
  
      }, (err) => {
       // Handle error
+      console.log('da error camera')
+
       console.log(err)
 
      });

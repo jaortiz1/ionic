@@ -32,6 +32,7 @@ import { PhotoProvider } from '../providers/photo/photo';
     Camera,
     
     
+    
     {provide: ErrorHandler, useClass: IonicErrorHandler},
      PhotoProvider
   ]
