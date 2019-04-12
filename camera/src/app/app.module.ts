@@ -9,6 +9,8 @@ import { Camera } from '@ionic-native/camera';
 import { File } from '@ionic-native/file';
 import { FilePath } from '@ionic-native/file-path';
 import { Transfer } from '@ionic-native/transfer';
+import { FileTransfer } from '@ionic-native/file-transfer';
+
 import { PhotoProvider } from '../providers/photo/photo';
 @NgModule({
   declarations: [
@@ -33,7 +35,7 @@ import { PhotoProvider } from '../providers/photo/photo';
     Camera,
     File,
     FilePath,
-    
+    FileTransfer,
     
     
     {provide: ErrorHandler, useClass: IonicErrorHandler},

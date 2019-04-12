@@ -5,6 +5,7 @@ import { Camera } from '@ionic-native/camera';
 import { File } from '@ionic-native/file';
 import { Transfer } from '@ionic-native/transfer';
 import { FilePath } from '@ionic-native/file-path';
+import { FileTransfer } from '@ionic-native/file-transfer';
 @NgModule({
   declarations: [
     PhotoPage,
@@ -20,7 +21,9 @@ import { FilePath } from '@ionic-native/file-path';
     Camera,
     Transfer,
     FilePath,
-    File
+    File,
+    FileTransfer,
+    
 
   ]
 })
