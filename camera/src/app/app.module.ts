@@ -6,7 +6,8 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { MyApp } from './app.component';
 import { PhotoPage } from '../pages/photo/photo';
 import { Camera } from '@ionic-native/camera';
-
+import { File } from '@ionic-native/file';
+import { FilePath } from '@ionic-native/file-path';
 import { Transfer } from '@ionic-native/transfer';
 import { PhotoProvider } from '../providers/photo/photo';
 @NgModule({
@@ -30,6 +31,8 @@ import { PhotoProvider } from '../providers/photo/photo';
     StatusBar,
     SplashScreen,
     Camera,
+    File,
+    FilePath,
     
     
     
